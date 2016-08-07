@@ -1,0 +1,26 @@
+<% if (!o.get('example')) { %>
+    <div class="alert alert-info" role="alert">
+        Please set the "Example Directory" to some directory.
+    </div>
+<% } %>
+
+<form>
+    <div class="form-group">
+        <label for="cfgExample">Example Directory</label>
+        <input class="form-control" id="cfgExample" value="<%=o.get('examplePath')%>" placeholder="/home/{you}">
+    </div>
+     <div class="form-group">
+        <label for="cfgTheme">Theme</label>
+        <select id="cfgTheme" class="form-control">
+            <option<% if ('Bläck' == o.get('theme')) { %> selected="selected"<% } %>>Bläk</option>
+            <option<% if ('Wheit' == o.get('theme')) { %> selected="selected"<% } %>>Wheit</option>
+        </select>
+     </div>
+   <div class="checkbox">
+        <label>
+            <input type="checkbox" id="cfgDebug"<% if (o.get('debug')) { %> checked="checked"<% } %>> Debug
+        </label>
+    </div>
+    <button id="btnSaveConfig" type="button" class="btn btn-sm btn-success">Save</button>
+</form>
+

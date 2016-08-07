@@ -1,0 +1,50 @@
+/* Generic pane rules */
+body { margin: 0; }
+.row, .col { overflow: hidden; position: absolute; }
+.row { left: 0; right: 0; margin: 0;}
+.col { top: 0; bottom: 0; }
+.scroll-x { overflow-x: auto; }
+.scroll-y { overflow-y: auto; }
+
+.left.col { width: 250px; }
+.right.col { left: 250px; right: 0; }
+.header.row { height: 100px; line-height: 100px; }
+.body.row { top: 100px; bottom: 50px; padding: 5px; }
+.footer.row { height: 50px; bottom: 0; line-height: 50px; }
+
+/* Custom rules */
+.header.row.navi {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.body.row.navi {
+    top: 40px;
+    bottom: 0; }
+
+div.header.row.navi {
+    border: 1px solid silver;
+}
+
+div.body.row.navi {
+    border: 1px solid silver;
+}
+
+div#header {
+    border: 1px solid silver;
+}
+
+div.body.row {
+    border: 1px solid silver;
+}
+
+footer {
+    border: 1px solid silver;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+body {
+    background-color: #404040;
+    color: #cbcbcb;
+}

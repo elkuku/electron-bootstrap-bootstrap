@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link id="styleSheet" href="css/example.css" rel="stylesheet">
+</head>
+<body>
+<div class="left col">
+    <div class="header row navi"></div>
+    <div class="body row scroll-y navi">
+        <ul id="navigation" class="list-unstyled"></ul>
+    </div>
+</div>
+<div class="right col">
+    <div id="header" class="header row"></div>
+    <div class="body row scroll-y">
+        <div id="console"></div>
+        <div id="content"></div>
+    </div>
+    <div class="footer row">
+        <footer>
+            <script>
+            document.write('node ' + process.versions.node + ' - Chromium ' + process.versions.chrome + ' - Electron ' + process.versions.electron)
+            </script>
+        </footer>
+    </div>
+</div>
+
+<script>window.$ = window.jQuery = require('./node_modules/jquery/dist/jquery.min');</script>
+
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<script> require('./renderer.js') </script>
+
+</body>
+
+</html>
