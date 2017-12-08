@@ -4,8 +4,8 @@ An Example "Electron + Bootstrap" application
 
 ## Installation
 
-    npm install
-    npm start
+    yarn install
+    yarn start
     
 ## Screens
 
