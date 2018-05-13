@@ -4,6 +4,8 @@ An Example "Electron + Bootstrap" application
 
 ## Installation
 
+We use [yarn](https://yarnpkg.com)
+
     yarn install
     yarn start
     
