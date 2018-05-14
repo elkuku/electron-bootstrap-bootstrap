@@ -16,7 +16,6 @@ body { margin: 0; }
 .header.row.navi {
     height: 40px;
     line-height: 40px;
-    text-align: center;
 }
 .body.row.navi {
     top: 40px;
@@ -41,5 +40,6 @@ div.body.row {
 footer {
     border: 1px solid silver;
     font-size: 0.8em;
+    width: 70%;
     text-align: center;
 }
