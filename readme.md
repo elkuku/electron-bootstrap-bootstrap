@@ -1,6 +1,6 @@
 # Electron Bootstrap bootstrap
 
-An Example "Electron + Bootstrap" application
+An Example [Electron](https://electronjs.org/) + [Bootstrap](https://getbootstrap.com/) application template.
 
 ## Installation
 
@@ -11,4 +11,10 @@ We use [yarn](https://yarnpkg.com)
     
 ## Screens
 
-![2016-08-07-190620_802x623_scrot](https://cloud.githubusercontent.com/assets/33978/17466289/3b4651a2-5cd2-11e6-825e-16e9ca9e6e69.png)
+![bildschirmfoto_2018-05-14_10-31-08](https://user-images.githubusercontent.com/33978/40007348-220ad352-5762-11e8-89b2-5e8c56c06df8.png)
+
+## Next
+
+Add your code 
+
+    =;)
