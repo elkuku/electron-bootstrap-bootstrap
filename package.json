@@ -15,12 +15,12 @@
     "url": "git+https://github.com/elkuku/electron-bootstrap-bootstrap.git"
   },
   "devDependencies": {
-    "electron": "^1.7.9"
+    "electron": "2.0.0"
   },
   "dependencies": {
+    "bootstrap": "4.1.1",
+    "ejs": "2.6.1",
     "electron-config": "^1.0.0",
-    "ejs": "^2.5.1",
-    "bootstrap": "^3.3.7",
-    "jquery": "^3.2.1"
+    "jquery": "3.3.1"
   }
 }
