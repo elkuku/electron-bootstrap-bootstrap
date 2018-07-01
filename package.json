@@ -15,7 +15,7 @@
     "url": "git+https://github.com/elkuku/electron-bootstrap-bootstrap.git"
   },
   "devDependencies": {
-    "electron": "2.0.0"
+    "electron": "2.0.3"
   },
   "dependencies": {
     "bootstrap": "4.1.1",
