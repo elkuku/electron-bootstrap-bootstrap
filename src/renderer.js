@@ -7,19 +7,19 @@ $(function () {
         fs = require('fs'),
         path = require('path'),
         ejs = require('ejs'),
-        pjson = require('./package.json')
+        pjson = require('../package.json')
 
     setup()
 
     function setup() {
         // Check if "Wheit" (Light) theme is selected
         if ('Bläk' === config.get('theme')) {
-            $('head link#styleSheet').attr('href', 'css/example_dark.css');
+            $('head link#styleSheet').attr('href', '../css/example_dark.css');
         }
 
         $('.header.row.navi').html(loadTemplate('cmdBox', {}));
 
-        $('footer').prepend('<img src="img/logo.png" height="24px"/> ' + pjson.productName + ' ' + pjson.version + ' - ');
+        $('footer').prepend('<img src="../img/logo.png" height="24px"/> ' + pjson.productName + ' ' + pjson.version + ' - ');
 
         initContent()
 
@@ -39,9 +39,9 @@ $(function () {
             var e = $('head link#styleSheet');
 
             if (e.attr('href').indexOf('dark') > 0) {
-                e.attr('href', 'css/example.css');
+                e.attr('href', '../css/example.css');
             } else {
-                e.attr('href', 'css/example_dark.css');
+                e.attr('href', '../css/example_dark.css');
             }
         });
     }
@@ -55,12 +55,12 @@ $(function () {
      * @returns {String}
      */
     function loadTemplate(name, object) {
-        var tpl = fs.readFileSync(__dirname + '/partials/' + name + '.ejs');
+        var tpl = fs.readFileSync(__dirname + '/../partials/' + name + '.ejs');
         return ejs.render(tpl.toString(), object);
     }
 
     function initContent(message) {
-        $('#header').html('<h2><img src="img/logo.png" height="70px"/> ' + pjson.productName + ' <code>' + pjson.version + '</code></h2>');
+        $('#header').html('<h2><img src="../img/logo.png" height="70px"/> ' + pjson.productName + ' <code>' + pjson.version + '</code></h2>');
         $('#content').html(loadTemplate('alert', {type:'info', message:'Hey there&hellip;'}));
 
         if (message) {
@@ -72,7 +72,7 @@ $(function () {
      * Show the configuration.
      */
     function showConfig() {
-        $('#header').html('<h3><img src="img/logo.png" height="70px"/> Configuration</h3>');
+        $('#header').html('<h3><img src="../img/logo.png" height="70px"/> Configuration</h3>');
         $('#content').html(loadTemplate('config', {o:config}));
         $('#console').html('');
 
@@ -84,9 +84,9 @@ $(function () {
             var e = $('head link#styleSheet');
 
             if ('Bläk' === $(this).val()) {
-                e.attr('href', 'css/example_dark.css');
+                e.attr('href', '../css/example_dark.css');
             } else {
-                e.attr('href', 'css/example.css');
+                e.attr('href', '../css/example.css');
             }
         });
     }

@@ -6,7 +6,7 @@
   "description": "An Example",
   "author": "elkuku",
   "license": "SEE LICENSE IN copying",
-  "main": "main.js",
+  "main": "src/main.js",
   "scripts": {
     "start": "./node_modules/.bin/electron ."
   },
