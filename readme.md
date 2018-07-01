@@ -4,10 +4,8 @@ An Example [Electron](https://electronjs.org/) + [Bootstrap](https://getbootstra
 
 ## Installation
 
-We use [yarn](https://yarnpkg.com)
-
-    yarn install
-    yarn start
+    npm install
+    npm start
     
 ## Screens
 
