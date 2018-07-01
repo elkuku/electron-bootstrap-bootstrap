@@ -5,7 +5,7 @@ An Example [Electron](https://electronjs.org/) + [Bootstrap](https://getbootstra
 ## Installation
 
     npm install
-    npm start
+    npm run start
     
 ## Screens
 
