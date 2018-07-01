@@ -14,7 +14,7 @@ const
 let mainWindow
 
 function createWindow() {
-    var bgColor = ('Wheit' == config.get('theme')) ? '#ffffff' : '#1e1e1e'
+    let bgColor = ('Wheit' === config.get('theme')) ? '#ffffff' : '#1e1e1e';
 
     // Create the browser window.
     mainWindow = new BrowserWindow({

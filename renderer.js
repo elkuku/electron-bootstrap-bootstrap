@@ -13,7 +13,7 @@ $(function () {
 
     function setup() {
         // Check if "Wheit" (Light) theme is selected
-        if ('Bläk' == config.get('theme')) {
+        if ('Bläk' === config.get('theme')) {
             $('head link#styleSheet').attr('href', 'css/example_dark.css');
         }
 
@@ -83,7 +83,7 @@ $(function () {
         $('#cfgTheme').on('change', function () {
             var e = $('head link#styleSheet');
 
-            if ('Bläk' == $(this).val()) {
+            if ('Bläk' === $(this).val()) {
                 e.attr('href', 'css/example_dark.css');
             } else {
                 e.attr('href', 'css/example.css');
@@ -97,9 +97,9 @@ $(function () {
     function saveConfig() {
         var examplePath = $('#cfgExample').val(),
             theme = $('#cfgTheme').val(),
-            debug = $('#cfgDebug').is(':checked') ? true : false;
+            debug = $('#cfgDebug').is(':checked');
 
-        if (false == fs.existsSync(examplePath)) {
+        if (false === fs.existsSync(examplePath)) {
             dialog.showErrorBox('Invalid Path', 'The example directory path is invalid');
             return;
         }

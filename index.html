@@ -3,29 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link id="styleSheet" href="css/example.css" rel="stylesheet">
+    <link href="css/example.css" rel="stylesheet" id="styleSheet">
 </head>
 <body>
-<div class="left col">
-    <div class="header row navi"></div>
-    <div class="body row scroll-y navi">
-        <ul id="navigation" class="list-unstyled"></ul>
+<div class="row">
+    <div class="col-3">
+        <div class="header row navi"></div>
+        <div class="body row scroll-y navi">
+            <ul id="navigation" class="list-unstyled"></ul>
+        </div>
+    </div>
+    <div class="col-9">
+        <div id="header" class="header row"></div>
+        <div class="body row scroll-y">
+            <div id="console"></div>
+            <div id="content"></div>
+        </div>
     </div>
 </div>
-<div class="right col">
-    <div id="header" class="header row"></div>
-    <div class="body row scroll-y">
-        <div id="console"></div>
-        <div id="content"></div>
-    </div>
-    <div class="footer row">
-        <footer>
-            <script>
-            document.write('node ' + process.versions.node + ' - Chromium ' + process.versions.chrome + ' - Electron ' + process.versions.electron)
-            </script>
-        </footer>
-    </div>
-</div>
+<footer class="fixed-bottom text-center">
+    <script>
+        document.write(
+            'node ' + process.versions.node
+            + ' - Chromium ' + process.versions.chrome
+            + ' - Electron ' + process.versions.electron
+        )
+    </script>
+</footer>
 
 <script>window.$ = window.jQuery = require('./node_modules/jquery/dist/jquery.min');</script>
 
